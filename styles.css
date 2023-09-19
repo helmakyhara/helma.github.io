@@ -1,0 +1,41 @@
+body {
+    background-color:rgb(219, 195, 199);
+}
+
+h1 {
+    text-align: center;
+    background-color: pink;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;
+    position: sticky;
+    top: 0;
+}
+
+h2 {
+    color:blue;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table {
+width: 650px;
+margin: 0 auto;
+border: 2px solid pink;
+border-collapse: collapse;
+}
+
+
+th, td {
+    padding: 10px;
+    border:2px solid pink;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+span {
+    font-weight: bold;
+    background-color:lightpink;
+
+}
+
+
