@@ -1,41 +1,222 @@
+/*Universal Styles*/
+html {
+    box-sizing: border-box;
+}
+
 body {
-    background-color:rgb(219, 195, 199);
+    background-image: url(neutral-background.jpg);
+ }
+
+ @font-face {
+    font-family: 'Montserrat Alternates';
+    font-style: italic;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/montserratalternates/v17/mFThWacfw6zH4dthXcyms1lPpC8I_b0juU057pfSIJlp0Gl5.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/montserratalternates/v17/mFTvWacfw6zH4dthXcyms1lPpC8I_b0juU0566fQKp5L0g.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://fonts.gstatic.com/s/montserratalternates/v17/mFTiWacfw6zH4dthXcyms1lPpC8I_b0juU0xUILFB7xG-GNxkg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+    
+    @font-face {
+        font-family: 'Caveat';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/caveat/v18/WnznHAc5bAfYB2QRah7pcpNvOx-pjfJ9eIWpYT5Kmgq3sw.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      @font-face {
+        font-family: 'Cardo';
+        font-style: italic;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/cardo/v19/wlpxgwjKBV1pqhv97IMx3ExNYCg.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      @font-face {
+        font-family: 'Cardo';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/cardo/v19/wlp_gwjKBV1pqhv43IE7225P.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      @font-face {
+        font-family: 'Cardo';
+        font-style: normal;
+        font-weight: 700;
+        src: url(https://fonts.gstatic.com/s/cardo/v19/wlpygwjKBV1pqhND-ZQW-WNlaiBW.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      @font-face {
+        font-family: 'Mooli';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/mooli/v1/-F6_fjJpLyk1bbPGDm_6pClI.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+
+    header {
+            
+            margin: -20px;
+            width: 100%;
+            background-color: bisque;
+            color: brown;
+            position: fixed;
+    }
+
+    h1{ 
+        text-align: center;
+        font-family: 'Mooli', serif;
+        text-decoration: underline;
+        letter-spacing: 0.1em;
+        word-spacing: 0.1em;
+        font-weight: bold;
+    }
+
+    p, li {
+        font-family: 'Mooli';
+        color: brown;
+    }
+
+    .color {
+        border: 1px brown;
+        margin: 20px 140px;
+        padding: 0px 20px;
+        background-color: rgba(255, 228, 196, 50%);
+    
+    }
+
+    .color h2 {
+        text-align: left;
+        text-decoration: underline;
+        font-family: 'Mooli', sans-serif;
+        color: brown;
+
+    }
+
+    .color-panel {
+        display: inline-block;
+        width: 32%;
+        text-align: center;
+        margin: 20px auto;
+        min-height: 100px;
+    }
+
+    .Corn-silk {
+        background-color: #FFF8DC;
+        border: 0.5px solid brown;
+    }
+
+    .Davajo-white {
+        background-color: #FFDEAD;
+        border: 0.5px solid brown;
+    }
+
+    .Wheat {
+        background-color: #F5DEB3;
+        border: 0.5px solid brown;
+    }
+
+    .Rosy-brown {
+        background-color: #BC8F8F;
+        border: 0.5px solid brown;
+    }
+
+    .Sandy-brown {
+        background-color: #F4A460;
+        border: 0.5px solid brown;
+    }    
+
+    .Peru {
+        background-color: #CD853F;
+        border: 0.5px solid brown;
+    }
+
+    .Goldenrod {
+        background-color: #DAA520;
+        border: 0.5px solid brown;
+    }
+
+    .Chocolate {
+        background-color: #8B4513;
+        border: 0.5px solid bisque;
+    }
+    .chocolate {
+        color: bisque;
+    }
+
+    .Sienna {
+        background-color: #A0522D;
+        border: 0.5px solid bisque;
+    }
+
+    .sienna {
+        color: bisque;
+    }
+
+    .color-label, .color-hex{
+        font-family: 'Caveat';
+        letter-spacing: 0.03em;
+        word-spacing:0.4em;
+    }
+    .font {
+        border-top: 2px solid brown;
+    }
+
+    .font-title {
+        color: brown;
+        font-family: 'Montserrat Alternates';
+    }
+
+    .Montserrat-Alternates .regular {
+        font-family: 'Montserrat Alternates';
+    }
+
+    .Montserrat-Alternates .bold {
+        font-family: 'Montserrat Alternates';
+        font-weight: 700;
+    }
+
+    .Montserrat-Alternates .italic {
+        font-family: 'Montserrat Alternates';
+        font-style: italic;
+    }
+
+    .Cardo .regular {
+        font-family: 'Cardo', serif;
+    }
+
+    .Cardo .bold {
+        font-family: 'Cardo', serif;
+        font-weight: 700;
+    }
+
+    .Cardo .italic {
+        font-family: 'Cardo', serif;
+        font-style: italic;
+    }
+
+.text-styles {
+    border-top: 2px solid brown;
 }
 
-h1 {
-    text-align: center;
-    background-color: pink;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color: blue;
-    position: sticky;
-    top: 0;
+.P-text {
+    text-decoration: underline;
 }
-
-h2 {
-    color:blue;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-table {
-width: 650px;
-margin: 0 auto;
-border: 2px solid pink;
-border-collapse: collapse;
-}
-
-
-th, td {
-    padding: 10px;
-    border:2px solid pink;
-    border-radius: 5px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-span {
-    font-weight: bold;
-    background-color:lightpink;
-
-}
-
-
